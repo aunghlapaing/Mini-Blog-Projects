@@ -1,5 +1,5 @@
 <?php 
-$query = "select name from category";
+$query = "select * from category";
 $res = $pdo->prepare($query);
 $res->execute();
 
