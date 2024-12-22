@@ -61,14 +61,10 @@
                             </div>
                         </div>
                         ";
-                    };
+                    }
                 ?>
             </div>
         </div>
     </div>
 
-<?php 
-header("Location:create.php");
-require_once("../helper/footer.php");
-
-?>
+<?php require_once("../helper/footer.php"); ?>
