@@ -13,7 +13,7 @@
     <div class="container mt-3">
         <div class="d-flex justify-content-center">
             <a href="../category/create.php" class="btn btn-outline-primary rounded shadow-sm m-3">Category</a>
-            <a href="../product/list.php" class="btn btn-outline-primary rounded shadow-sm m-3">Product</a>
+            <a href="../product/createProduct.php" class="btn btn-outline-primary rounded shadow-sm m-3">Product</a>
         </div>
     </div>
     
