@@ -12,7 +12,6 @@
     // echo "<pre>";
     // print_r ($categories);
 
-
 ?>
     <div class="container">
         <div class="row">

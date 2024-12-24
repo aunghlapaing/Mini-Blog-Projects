@@ -70,8 +70,6 @@ require_once('./source/categoryList.php');
                     ?>
                 <input type="submit" class="btn btn-primary mt-2 w-100" name="btn_create" value="Create">
             </div>
-
-
         </form>
     </div>
 </div>
@@ -98,6 +96,8 @@ if(isset($_POST['btn_create'])){
         $product_res = $pdo->prepare($product_query);
         $product_res->execute([$_POST['product_name'], $_POST['product_price'], $image, $_POST['description'], $_POST['categoryId']]);
         // echo "Create success";
+
+        header("Location:listProduct.php");
 
     }
     else{

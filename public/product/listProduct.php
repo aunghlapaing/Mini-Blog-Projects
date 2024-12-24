@@ -13,6 +13,7 @@
                 category.name as categoryName 
                 from product left join category 
                 on product.category_id=category.id 
+                order by product.created_at desc
             ";
     $res = $pdo->prepare($query);
     $res->execute();
@@ -52,8 +53,8 @@
                             <td>".$item['price']."</td>
                             <td>".$item['description']."</td>
                             <td>".$item['categoryName']."</td>
-                            <td><a href='update.php?id=' class='btn btn-secondary'><i class='fa-solid fa-pen-to-square'></i></a></td>
-                            <td><a href='deleteProduct.php?id=".$item['id']."' class='btn btn-danger'><i class='fa-solid fa-trash'></i></a> </td>
+                            <td><a href='updateProduct.php?id=".$item['id']."' class='btn btn-secondary'><i class='fa-solid fa-pen-to-square'></i></a></td>
+                            <td><a href='deleteProduct.php?id=".$item['id']."&oldImage=".$item['image']."' class='btn btn-danger'><i class='fa-solid fa-trash'></i></a> </td>
                         </tr>
                     ";
 

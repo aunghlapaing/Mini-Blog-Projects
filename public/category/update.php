@@ -43,6 +43,4 @@ $data = $res->fetch(PDO::FETCH_ASSOC);
     </div>
 </div>
 
-
-
 <?php require_once('../helper/footer.php'); ?>
