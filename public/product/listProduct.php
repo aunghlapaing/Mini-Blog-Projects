@@ -57,8 +57,6 @@
                             <td><a href='deleteProduct.php?id=".$item['id']."&oldImage=".$item['image']."' class='btn btn-danger'><i class='fa-solid fa-trash'></i></a> </td>
                         </tr>
                     ";
-
-                    
                 }      
             ?>
         </tbody>
