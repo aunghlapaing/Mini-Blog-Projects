@@ -15,8 +15,6 @@ $product_data = $product_res->fetchAll(PDO::FETCH_ASSOC);
 
 // echo "<pre>";
 // print_r($product_data);
-
-
 ?>
 
 <div class="container">
@@ -112,6 +110,5 @@ $product_data = $product_res->fetchAll(PDO::FETCH_ASSOC);
        </div>
     </div>
 </div>
-
 
 <?php require_once('../helper/footer.php'); ?>
